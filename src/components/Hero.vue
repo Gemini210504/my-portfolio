@@ -100,7 +100,7 @@ onMounted(() => {
         <div class="profile-image-wrapper">
           <div class="image-border"></div>
           <img
-            :src=Leap
+            :src="Leap"
             alt="Leang Chhengleap Profile"
             class="profile-image"
           />
