@@ -1,20 +1,21 @@
 <script setup>
-import { onMounted } from 'vue'
-import gsap from 'gsap'
-import { Toaster } from 'vue-sonner'
-import Navbar from './components/Navbar.vue'
-import Hero from './components/Hero.vue'
-import PortfolioGrid from './components/PortfolioGrid.vue'
-import Skills from './components/Skills.vue'
-import Contact from './components/Contact.vue'
+import { onMounted } from "vue";
+import gsap from "gsap";
+import { Toaster } from "vue-sonner";
+import Navbar from "./components/Navbar.vue";
+import Hero from "./components/Hero.vue";
+import PortfolioGrid from "./components/PortfolioGrid.vue";
+import Skills from "./components/Skills.vue";
+import Contact from "./components/Contact.vue";
+import EducationHistory from "./components/EducationHistory.vue";
 
 onMounted(() => {
-  gsap.from('.app-container', {
+  gsap.from(".app-container", {
     opacity: 0,
     duration: 1,
-    ease: 'power2.out'
-  })
-})
+    ease: "power2.out",
+  });
+});
 </script>
 
 <template>
@@ -24,11 +25,11 @@ onMounted(() => {
     <main>
       <Hero />
       <PortfolioGrid />
+      <EducationHistory />
       <Skills />
       <Contact />
     </main>
     <footer class="glass footer">
-
       <div class="footer-content">
         <p>&copy; 2026 Modern Portfolio. Built with Vue & GSAP.</p>
       </div>
