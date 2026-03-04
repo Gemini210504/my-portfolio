@@ -2,7 +2,7 @@
 import { onMounted } from "vue";
 import gsap from "gsap";
 import { Toaster } from "vue-sonner";
-import Navbar from "../components/Navbar.vue";
+import Navbar from "./components/NavBar.vue";
 import Hero from "./components/Hero.vue";
 import PortfolioGrid from "./components/PortfolioGrid.vue";
 import Skills from "./components/Skills.vue";
