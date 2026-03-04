@@ -228,7 +228,8 @@ const projects = [
   color: var(--text-secondary);
   font-size: 0.95rem;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 3; /* WebKit browsers */
+  line-clamp: 3;         /* Standard property */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
